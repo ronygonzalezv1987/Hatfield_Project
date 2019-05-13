@@ -19,7 +19,6 @@ class AddEmployeesTable extends Migration
             $table->string('title',60);
             $table->date('date_hire');
             $table->integer('organization_id')->unsigned();
-
             $table->foreign('organization_id')->references('id')->on('organizations')->onDelete('cascade');
         });
     }

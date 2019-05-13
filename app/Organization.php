@@ -8,11 +8,12 @@ class Organization extends Model
 {
     public $timestamps = false;
     protected $table="organizations";
-    protected $fillable=['name','location'];
+    protected $fillable=['id','name','location'];
 
 
-    public function Employee()
+    public function employee()
     {
         return $this->hasMany('App\Employee');
     }
 }
+

@@ -13,7 +13,8 @@ class AddOrganizationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('organizations', function (Blueprint $table) {
+        Schema::create('organizations', function (Blueprint $table)
+        {
             $table->increments('id');
             $table->string('name',40);
             $table->string('location',60);

@@ -11,14 +11,14 @@
       </li>
 
         <li class="nav-item active">
-          <a class="nav-link" href="" >Organization</a>
+          <a class="nav-link" href="{{route('organizations.index')}}" >Organization</a>
         </li>
         <li class="nav-item active">
-              <a class="nav-link" href="">Employees</a>
+              <a class="nav-link" href="{{route('employees.index')}}">Employees</a>
             </li>
 
         <li class="nav-item active">
-         <a class="nav-link" href="#">General_Information</a>
+         <a class="nav-link" href="{{route('organizations.show')}}">General_Information</a>
         </li>
 
 
